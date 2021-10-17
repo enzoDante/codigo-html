@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+
+/*----Criando modelo de botão!!!----*/
+
+
+a#btn{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font: bold 20px Arial;
+    transition: 340ms linear;
+    padding: 10px 16px;
+    display: inline-block;
+    background-color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, 0.281);
+    border-radius: 15px;
+    width: 12%;
+    margin-left: auto;
+    margin-right: auto;
+}
+a#btn:hover{
+    background-color: rgb(132, 0, 255);
+}
+a#btn:active{
+    transition: 200ms;
+    opacity: 0.5;
+    transform: scale(0.95);
+}

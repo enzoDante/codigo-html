@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+.button {
+    background-color: #000000;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.281);
+    border-radius: 15px;
+    border-width: 2px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-right: 20px;
+    transition: 350ms linear;
+}
+a.button:hover{
+    background-color: rgb(132, 0, 255);
+}
+a.button:active{
+    transition: 200ms;
+    opacity: 0.5;
+    transform: scale(0.95);
+}
