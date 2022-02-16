@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+body{
+    background-color: antiquewhite;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+header{
+    min-width: 200px;
+    min-height: 20px;
+    padding: 30px;
+    background-color: cadetblue;
+    box-shadow: 1px 1px 2px black;
+    text-align: center;
+    font-size: 1.2em;
+}
+main{
+    min-width: 200px;
+    max-width: 1200px;
+    min-height: 500px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 30px;
+    background-color: burlywood;
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px black;
+}
+main > div#caixa{
+    min-width: 200px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    border-style: solid;
+    display: grid;
+    grid-template-columns: 500px 500px;
+}
+div#caixa > div{
+    display: inline-block;
+    width: 450px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgb(187, 105, 38);
+    color: #000000;
+    transition: 500ms;
+}p.teste1{
+    color: transparent;
+    height: 70%;
+    transition: 500ms;
+}
+div#caixa > div:hover, p.teste1:hover{
+    background-color: rgb(80, 95, 109);
+    cursor: pointer;
+    color: white;
+}
