@@ -1,0 +1,38 @@
+@charset "UTF-8";
+div{
+    min-width: 200px;
+    max-width: 1000px;
+    min-height: 500px;
+    background-color: #797272;
+    margin: auto;
+    margin-bottom: 10vh;
+}
+section{
+    padding-top: 10vh; /*distancia do topo do elemento dentro do bloco */
+    padding-bottom: 10vh;/*distancia do pé do elemento dentro do bloco */
+    line-height: 2em; /*distancia entre as linhas */
+    padding-left: 30px; /*distancia do lado esquerdo do elemento dentro do bloco */
+    font-family: var(--fonte3); /*fonte */
+    /*font-size: 3.5vw; tamanho da fonte*/
+}
+section.imagem{
+    /*configuração da div com imagem do parallax*/
+    background-color: #252525;
+    box-shadow: inset 6px 6px 13px 0 #0000007a;
+    background-size: cover;
+    background-attachment: fixed; /*essa linha é mt importante!! ela fixa a imagem de fundo*/
+}
+section#img{
+    background-image: url("../imagens/background001.jpg");
+}
+main{
+    background-color: white;
+    color: black;
+    min-width: 200px;
+    max-width: 1500px;
+    min-height: 500px;
+    font-size: 1.2em;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
