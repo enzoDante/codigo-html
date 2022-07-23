@@ -1,0 +1,83 @@
+@charset "UTF-8";
+input[type="file"]{
+    display: none;
+}
+#imgfundo{
+    width: 100%;
+    height: 300px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    transition: linear 200ms;
+}
+#imgfundo img{
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);  
+}
+#imgfundo:hover{
+    cursor: pointer;
+    filter: brightness(50%)
+}
+/*===========================================================*/
+#perfilimg{
+    width: 150px;
+    height: 150px;
+    display: block;
+    position: relative;
+    transform: translate(0, -70%);
+    margin: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    transition: linear 200ms;
+    box-sizing: border-box;
+}
+#perfilimg img{
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);    
+}
+#perfilimg:hover{
+    cursor: pointer;
+    box-shadow: 2px 3px 5px black;
+    filter: brightness(50%)
+}
+/*=============================================*/
+#nome{
+    font-weight: bold;
+    font-size: 1.2em;
+    position: absolute;
+    top: 55%;
+    left: 20%;
+    margin: 20px;
+    transform: translate(-50%, 55%);
+}
+/*================================================*/
+#imgformbutton{
+    font-size: 1.1em;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-30%, -50%);
+    padding: 10px;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    transition: linear 200ms;
+
+}
+#imgformbutton:hover{
+    cursor: pointer;
+    filter: brightness(50%)
+}
