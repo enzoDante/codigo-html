@@ -43,7 +43,7 @@
         </div>
         <!--Modal de alterar imgperfil, imgfundo, nome, etc-->
         <div id="alterar" class="modal">
-            <form class="modal-content animate" action="" method="post" autocomplete="off">
+            <form class="modal-content animate" enctype="multipart/form-data" action="" method="post" autocomplete="off">
                 <div class="imgcontainer">
                     <span onclick="document.getElementById('alterar').style.display='none'" class="close" title="Close Modal">&times;</span>
                     <h3 id="textoeditar">Editar perfil</h3>
@@ -52,12 +52,12 @@
               
                 <div class="container">
                     <div>
-                        <label for="iimgfundo" id="imgfundo" class="emcimaimg fundoaltura"><img src="../imagens/fantasia-bruxo_planoFundo-1920x1080.jpg" alt=""></label>
-                        <input type="file" name="" id="iimgfundo">
+                        <label for="iimgfundo" id="imgfundo" class="emcimaimg fundoaltura"><img src="../imagens/fantasia-bruxo_planoFundo-1920x1080.jpg" alt="" id="perfil1"></label>
+                        <input type="file" name="" onchange="carregar1(event)" id="iimgfundo">
                     </div>
                     <div id="lugarperfil">
-                        <label for="iperfil" id="perfilimg" class="emcimaimg"><img  src="../imagens/6223_wolf-image_2500x1697_h.jpg" alt=""></label>
-                        <input type="file" name="" id="iperfil">
+                        <label for="iperfil" id="perfilimg" class="emcimaimg"><img id="perfil2" src="../imagens/6223_wolf-image_2500x1697_h.jpg" alt=""></label>
+                        <input type="file" name="" onchange="carregar2(event)" id="iperfil">
                     </div>
                     <div id="campos">
                         <div class="fieldset">
@@ -75,6 +75,7 @@
 
     </main>
     <script src="scripts/modal.js"></script>
+    <script src="scripts/carregarimg.js"></script>
     <footer>
 
     </footer>

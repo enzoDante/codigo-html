@@ -9,6 +9,7 @@ input[type="file"]{
     position: relative;
     overflow: hidden;
     transition: linear 200ms;
+    background-color: black;
 }
 #imgfundo img{
     max-width: 100%;
@@ -31,6 +32,7 @@ input[type="file"]{
     display: block;
     position: relative;
     transform: translate(0, -70%);
+    background-color: black;
     margin: 20px;
     border-radius: 50%;
     overflow: hidden;
