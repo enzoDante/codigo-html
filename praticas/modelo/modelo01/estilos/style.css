@@ -22,41 +22,55 @@ nav{
     background-color: #3e7bff;
     box-shadow: 3px 5px 6px #3161ca;
     color: white;
-    
+    overflow: hidden;
 }
 #navegador{
     max-width: 1200px;
-    display: flex;
     margin: auto;
     position: relative;
+    display: flex;
     align-items: center;
-    justify-content: center;
+    /*justify-content: center;
+    vertical-align: middle;
+    border: 1px solid black;
+    */
 }
-.nav{
-    width: 34%;
+#nav{
+    display:  inline-block;
+    padding: 23px;
+    width: 95%;
     text-align: center;
-    /*border: 1px solid black;*/
+    box-sizing: border-box;
 }
-.left{
-    text-align: left;
+#nav div{
+    display: inline-block;
+}
+#left{
+    float: left;
 }
 nav a{
     text-decoration: none;
     color: white;
     font-size: 1.1em;
     margin: 12px;
+    transition: linear 100ms;
+}
+nav a:hover{
+    border-bottom: 3px solid white;
+}
+
+#divimg{
+    width: 50px;
 }
 #perfila{
+    margin: auto;
     width: 50px;
     height: 50px;
     display: block;
     position: relative;
-    left: 100%;
-    transform: translate(-100px, 0);
     border-radius: 50%;
     overflow: hidden;
-    position: relative;
-    transition: linear 200ms;
+    transition: linear 100ms;
 }
 #perfila img{
     max-height: 100%;
@@ -68,8 +82,39 @@ nav a{
     transform: translate(-50%, -50%);    
 }
 #perfila:hover{
+    border-bottom: none;
     cursor: pointer;
-    filter: brightness(70%)
+    filter: brightness(80%)    
+}
+@media screen and (max-width: 700px){
+    #nav div, #nav div a{
+        display:  block;
+        margin: auto;      
+    }
+    #nav{
+        margin: auto;
+    }
+    #left{
+        float: none;
+        padding: 10px;
+    }
+    #nav div a{
+        padding: 15px;
+        background-color: #3161ca;
+        margin: 0 -39px 0 -39px;
+        font-size: 1.3em;
+        font-weight: bold;
+        border: 1px solid rgba(0, 0, 0, 0.192);
+        transition: linear 100ms;
+    }
+    #nav a:hover{
+        /*border-bottom: 3px solid white;*/
+        text-decoration: underline;
+        background-color: #2953ac;
+    }
+    #divimg{
+        display: none;
+    }
 }
 main{
     min-width: 300px;
