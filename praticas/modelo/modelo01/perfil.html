@@ -29,23 +29,52 @@
         </div>
         
     </nav>
-    <main>
-        <form action="" method="post">
+
+    <main>        
+        <div>
             <div>
-                <label for="iimgfundo" id="imgfundo"><img src="../imagens/fantasia-bruxo_planoFundo-1920x1080.jpg" alt=""></label>
-                <input type="file" name="" id="iimgfundo">
+                <div id="imgfundo"><img src="../imagens/fantasia-bruxo_planoFundo-1920x1080.jpg" alt=""></div>
             </div>
-            <div>
-                <label for="iperfil" id="perfilimg"><img  src="../imagens/6223_wolf-image_2500x1697_h.jpg" alt=""></label>
-                <input type="file" name="" id="iperfil">
+            <div id="lugarperfil">
+                <div id="perfilimg"><img src="../imagens/6223_wolf-image_2500x1697_h.jpg" alt=""></div>
             </div>
-            <div>
-                <label for="inome" id="nome">Nome: aq</label>
-            </div>
-            <button type="submit" id="imgformbutton">Salvar</button>
-        </form>
+            <h2 id="nome">Nome: aq</h2>
+            <button id="imgformbutton" onclick="document.getElementById('alterar').style.display='block'">Editar perfil</button>
+        </div>
+        <!--Modal de alterar imgperfil, imgfundo, nome, etc-->
+        <div id="alterar" class="modal">
+            <form class="modal-content animate" action="" method="post" autocomplete="off">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('alterar').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <h3 id="textoeditar">Editar perfil</h3>
+                    <button type="submit" id="btnsalvar">Salvar</button>
+                </div>
+              
+                <div class="container">
+                    <div>
+                        <label for="iimgfundo" id="imgfundo" class="emcimaimg fundoaltura"><img src="../imagens/fantasia-bruxo_planoFundo-1920x1080.jpg" alt=""></label>
+                        <input type="file" name="" id="iimgfundo">
+                    </div>
+                    <div id="lugarperfil">
+                        <label for="iperfil" id="perfilimg" class="emcimaimg"><img  src="../imagens/6223_wolf-image_2500x1697_h.jpg" alt=""></label>
+                        <input type="file" name="" id="iperfil">
+                    </div>
+                    <div id="campos">
+                        <div class="fieldset">
+                            <label for="inome"><strong>Nome</strong></label>
+                            <input type="text" name="nome" id="inome">
+                        </div>
+                        <div class="fieldset">
+                            <label for="ibio"><strong>Bio</strong></label>
+                            <textarea name="bio" id="ibio" cols="30" rows="10"></textarea>
+                        </div><br>
+                    </div>
+                </div>
+            </form>
+        </div>
 
     </main>
+    <script src="scripts/modal.js"></script>
     <footer>
 
     </footer>
