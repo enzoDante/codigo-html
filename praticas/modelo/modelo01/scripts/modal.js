@@ -6,3 +6,17 @@ window.onclick = function(event){
         modal.style.display = 'none'
     }
 }
+
+let publicar = document.getElementById('publicacon')
+
+/*    window.onclick = function(event){
+        if(event.target == publicar){
+            publicar.style.display = 'none'
+        }
+    }
+*/
+function telamodal(event){
+    if(event.target == publicar){
+        publicar.style.display = 'none'
+    }
+}
