@@ -35,6 +35,9 @@ nav{
     border: 1px solid black;
     */
 }
+input[type="file"]{
+    display: none;
+}
 #nav{
     display:  inline-block;
     padding: 23px;

@@ -97,26 +97,6 @@ input[type="file"]{
     }
 }
 /*=========================================*/
-#publicar{
-    padding: 20px;
-    margin-bottom: 30px;
-}
-#publicar button{
-    float: right;
-    text-decoration: none;
-    border: 1px solid black;
-    color: black;
-    background-color: white;
-    font-size: 1.1em;
-    font-weight: bold;
-    padding: 10px;
-    border-radius: 15px;
-    transition: linear 200ms;
-}
-#publicar button:hover{
-    cursor: pointer;
-    filter: brightness(50%)
-}
 #conteudo{
     display: grid;
     grid-template-columns: 400px 400px 400px;
