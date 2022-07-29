@@ -1,0 +1,61 @@
+esse modelo é baseado e inspirado no instagram, twitter e qualquer coisa q vier na minha mente
+
+==========php=============
+-página perfil: p aparecer o perfil de qualquer usuário, a url terá o id do usuário
+exemp: modelo01/perfil.php?id=identidadeAq
+assim com o id, irá apenas substituir alguns campos usando sql p pegar os valores
+=================================================================================================================
+-Página postver: a mesma coisa da url, porém será o id do post ao invés de ser o id do usuário
+usando chave estrangeiras será possível pegar valores do usuário também
+=================================================================================================================
+-comentários de posts: essa parte eu imagino ser um pouco mais complicado (meu raciocínio abaixo)
+tabelas: usuário, posts e comentários
+em comentários terá chave estrangeira ligada ao id de cada post, ent no post irá procurar na tabela comentários
+quais comentários tem a chave estrangeira com mesmo valor do id daquele post, assim irá aparecer os comentários
+p aquele post em específico
+pensando agr parece um pouco mais simples dps q eu escrevi :)
+=================================================================================================================
+-seguir/ inscrever-se em usuários: nn parece complicado:
+tabelas: usuário e seguindo: na tabela seguindo terá o id do usuário q clicou no botão de seguir e o id do usuário q foi seguido exemp:
+
+seguindo(colunas mysql): id_usuario | id_seguir - parece ser só isso, duas chaves estrangeiras
+talvez adicionar outra tabela só p ver a quantidade de seguidores ou no php qd verificar os q to seguindo, somar ++ numa variável
+ai na página onde é possível ver todos q determinado usuário segue seria onde eu verifico na tabela os ids do
+usuário q tou olhando e ai aparece os usuários q ele ta seguindo
+=================================================================================================================
+-chat entre usuários:
+tabelas: usuário e chat - no chat terá o id de ambos os usuários, um insert ocorre no chat quando um usuário começa a 
+seguir o outro, assim ele será permitido de mandar msg com o outro 
+tabela chat: id_usu | id_usu2 | msg | foto(foto seria qd vai mandar uma foto p alguém, n foto de perfil!)
+talvez dê p fazer com minha habilidade atual igual aos raciocínios acima :)
+=================================================================================================================
+-chat em grupo----------------------n faço ideia de como fazer!:
+tabelas: usuários e grupo, na tabela grupo teria o id de todos q fazem parte dele, e as mensagens
+mas agr ligar isso p aparecer oq deve aparecer é meio complicado :/
+=================================================================================================================
+-página inicial posts: na tabela post, terá o id do usuário q postou, logo verificando a tabela de seguindo, se 
+ter o meu id e o id do usuário, irá procurar na tabela post e mostrar p mim
+=================================================================================================================
+-página de busca: tabela usuários, n sei se vai precisar de mais alguma coisa, mas pretendo q seja uma página
+onde somente apareça todos os usuários q eu pesquisar
+=================================================================================================================
+-curtidas em posts: ao clicar em curtir de um determinado post, na tabela desse post irá somar + 1 na coluna de 
+curtida, mas n sei como impedir um usuário de curtir várias vezes o msm post :/
+n aguento mais pensar em ter mt tabela, pq eu poderia criar uma tabela onde tem o id dos posts e se eu curti ou nn
+=================================================================================================================
+-compartilhar post com alguém, a forma mais fácil é gerar um link p post
+=================================================================================================================
+
+================html páginas q falta=======================================
+-página de seguidores (onde aparece todos q tal usuário ta seguindo)
+-página de pessoas q me seguem (onde aparece todos q seguem tal usuário)
+-chat entre usuários (entre aqueles q seguem-n sei como fazer por enquanto a parte php... talvez)
+-chat em grupo (onde diversos usuários mandam mensagem e todos podem ver no msm lugar - parece mais difícil de fazer)
+-página principal (onde aparece os posts daqueles q eu sigo)
+-página de busca (onde eu posso procurar outros usuários e seguí-los)
+-página geral (onde aparece posts de pessoas q eu nn sigo ou seja, perfis q são recomendados pelo sistema)
+-página de curtida (onde eu vejo quem curtiu um post meu-talvez nn vou fazer pq parece desnecessário)
+
+
+
+vou ter q montar uma imagem das tabelas mysql, pq meu deus, mt coisa
