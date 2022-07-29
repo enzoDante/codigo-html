@@ -87,7 +87,7 @@ nav a:hover{
 #perfila:hover{
     border-bottom: none;
     cursor: pointer;
-    filter: brightness(80%)    
+    filter: brightness(80%);
 }
 @media screen and (max-width: 700px){
     #nav div, #nav div a{

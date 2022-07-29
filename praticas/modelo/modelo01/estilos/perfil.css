@@ -70,6 +70,17 @@ input[type="file"]{
     margin: 20px;
     transform: translate(-37%, 70%);*/
 }
+#seguires{
+    padding: 10px;
+}
+.seguiros{
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+.seguiros:hover{
+    text-decoration: underline;
+}
 /*================================================*/
 #imgformbutton{
     font-size: 1.1em;
