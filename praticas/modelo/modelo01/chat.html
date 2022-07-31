@@ -159,11 +159,12 @@
                 <hr>
                 <!--==========================================-->
                 <div id="enviar">
-                    <form action="" method="post">
-                        <button type="submit" id="btn">Enviar</button>
+                    <form action="aaaa.php" method="post" id="chatbate">
+                        <button type="submit" id="btn" onclick="acharlink(event)">Enviar</button>
                         <input type="hidden" name="meu_id" value="">
                         <input type="hidden" name="id_amigo" value="">
-                        <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Papear"></textarea>
+                        <textarea name="msgo" id="imsg" cols="30" rows="10" placeholder="Papear"></textarea>
+                        <input type="hidden" name="msg" id="iimsg">
                     </form>
                 </div>
             </div>
@@ -174,7 +175,7 @@
     <script src="scripts/modal.js"></script>
     <script src="scripts/carregarimg.js"></script>
     <footer>
-
+        <!--<p id="testando"></p>-->
     </footer>
     
 </body>
