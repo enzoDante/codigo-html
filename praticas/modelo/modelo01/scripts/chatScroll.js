@@ -6,7 +6,6 @@ function acharlink(event){
     event.preventDefault()
     
     var
-
     reURL = /((?:http(s)?:\/\/)?(?:www(\d)?\.)?([\w\-]+\.\w{2,})\/?((?:\?(?:[\w\-]+(?:=[\w\-]+)?)?(?:&[\w\-]+(?:=[\w\-]+)?)?))?(#(?:[^\s]+)?)?)/g,
 
     text = document.getElementById("imsg").value,

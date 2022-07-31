@@ -115,6 +115,10 @@
     color: white;
     border-radius: 20px;
 }
+.msge a, .msga a{
+    color: white;
+    font-weight: bold;
+}
 /*======================*/
 #btn{
     margin: 10px;
