@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post de alguém</title>
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/modal.css">
+    <link rel="stylesheet" href="estilos/post.css">
+</head>
+<body>
+    <header>
+        <h1>Post</h1>
+    </header>
+    <nav>
+        <div id="navegador">
+            <div id="nav">
+                <div id="left">
+                    <h3>Nome Site</h3>
+                </div>
+                <div>
+                    <a href="#">Home</a>
+                    <a href="#">Navegar</a>
+                    <a href="#">n sei oq</a>
+                    <a href="perfil.html">perfil</a>
+                    <a href="#">outros</a>
+                </div>
+            </div>
+            <div id="divimg">
+                <a href="perfil.html" id="perfila"><img src="../imagens/6223_wolf-image_2500x1697_h.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>   
+    </nav>
+
+    <main>
+        <div>
+            <div id="publicar">
+                <button onclick="document.getElementById('publicacon').style.display='block'">Publicar</button>
+            </div>
+            <!--==================================modal publicar===================================-->
+            <div id="publicacon" class="modal" onclick="telamodal(event)">
+                <form class="modal-content animate" enctype="multipart/form-data" action="" method="post" autocomplete="off">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('publicacon').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <h3 id="textoeditar">Postagem</h3>
+                        <button type="submit" id="btnsalvar">Publicar</button>
+                    </div>
+                  <!--================================corpo==============================-->
+                    <div>                        
+                        <div id="campos">
+                            <div class="fieldset">
+                                <label for="ibio"><strong>Comentário</strong></label>
+                                <textarea name="bio" id="ibio" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="iimgpost" id="postarimg"><img id="imgpostar" src="../imagens/pngwing.com.png" alt=""></label>
+                            <input type="file" onchange="carregar3(event)" name="imgpost" id="iimgpost">
+                        </div><br>
+                    </div>
+                </form>
+            </div>
+            <!--=================================fim do modal publicar=============================-->
+        </div>
+        <!--======================================================-->
+        <div id="postagem" class="pagiprincipal">
+            <div class="imgusuario">
+                <span id="perfila">
+                    <a href="#"><img src="../imagens/blank-profile-picture.png" alt=""></a>
+                </span>
+                <a href="#">Nome usuário</a>
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit facere quas totam culpa dicta. At dicta assumenda, consequuntur dolorem eius magnam et ratione natus ut dolor, magni illum aperiam. Facere!
+            </p>
+            <div class="imagempublicada">
+                <img src="../imagens/roof-ofThe-world_planoFundo-1920x1080.jpg" alt="">
+            </div>
+            <a href=""><img style="width: 30px;" src="../imagens/coracao_vermelho.png" alt=""></a>
+            <a href=""><img style="width: 30px;" src="../imagens/link.png" alt=""></a>
+            <a href="postver.html?id=teste" class="comment">Comentários</a>
+        </div>
+        <!--=================---------------------------------------------------====================-->
+        <div id="postagem" class="pagiprincipal">
+            <div class="imgusuario">
+                <span id="perfila">
+                    <a href="#"><img src="../imagens/blank-profile-picture.png" alt=""></a>
+                </span>
+                <a href="#">Nome usuário</a>
+            </div>
+            <p>
+                Lorem ipsumenda, consequuntur dolorem eius magnam et ratione natus ut dolor, magni illum aperiam. Facere!
+            </p>
+            <div class="imagempublicada">
+                <img src="../imagens/2048x1152_fantasy-giant-wolf-monster-artwork.jpg" alt="">
+            </div>
+            <a href=""><img style="width: 30px;" src="../imagens/coracao.png" alt=""></a>
+            <a href=""><img style="width: 30px;" src="../imagens/link.png" alt=""></a>
+            <a href="" class="comment">Comentários</a>
+        </div>
+        <!--=================---------------------------------------------------====================-->
+        <div id="postagem" class="pagiprincipal">
+            <div class="imgusuario">
+                <span id="perfila">
+                    <a href="#"><img src="../imagens/blank-profile-picture.png" alt=""></a>
+                </span>
+                <a href="#">Nome usuário</a>
+            </div>
+            <p>
+                Lorem ipsumenda, consequuntur dolorem eius magnam et ratione natus ut dolor, magni illum aperiam. Facere!
+            </p>
+            <div class="imagempublicada">
+                <img src="../imagens/fantasia-bruxo_planoFundo-1920x1080.jpg" alt="">
+            </div>
+            <a href=""><img style="width: 30px;" src="../imagens/coracao.png" alt=""></a>
+            <a href=""><img style="width: 30px;" src="../imagens/link.png" alt=""></a>
+            <a href="" class="comment">Comentários</a>
+        </div>
+        
+        <br>
+    </main>
+    <script src="scripts/modal.js"></script>
+    <script src="scripts/carregarimg.js"></script>
+</body>
+</html>
