@@ -90,6 +90,32 @@
     height: 530px;
     overflow: auto;
 }
+.amsg{
+    padding: 10px;
+    display: block;
+    min-height: 50px;
+}
+.emsg{
+    padding: 10px;
+    display: block;
+    min-height: 50px;
+}
+.msga{
+    padding: 15px;
+    width: 200px;
+    background-color: rgb(56, 56, 56);
+    color: white;
+    border-radius: 20px;
+}
+.msge{
+    margin-left: 60%;
+    padding: 15px;
+    width: 200px;
+    background-color: rgb(24, 117, 192);
+    color: white;
+    border-radius: 20px;
+}
+/*======================*/
 #btn{
     margin: 10px;
     float: right;
@@ -110,4 +136,34 @@
     margin: auto;
     width: 90%;
     max-height: 100px;
+}
+/*=============responsividade=================*/
+@media screen and (max-width: 1050px){
+    #grid{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    #amigos{
+        width: 600px;
+    }
+    #chat{
+        width: 600px;
+    }
+
+}
+@media screen and (max-width: 600px){
+    #grid{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    #amigos{
+        width: 100%;
+    }
+    #chat{
+        width: 100%;
+    }
+    .msge{
+        margin-left: 44%;
+    }
+
 }
