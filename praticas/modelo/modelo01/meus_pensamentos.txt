@@ -22,6 +22,7 @@ seguindo(colunas mysql): id_usuario | id_seguir - parece ser só isso, duas chav
 talvez adicionar outra tabela só p ver a quantidade de seguidores ou no php qd verificar os q to seguindo, somar ++ numa variável
 ai na página onde é possível ver todos q determinado usuário segue seria onde eu verifico na tabela os ids do
 usuário q tou olhando e ai aparece os usuários q ele ta seguindo
+-bloquear: na mesma tabela "seguindo" terá a coluna bool bloquear, se eu bloqueei alguém estará true
 =================================================================================================================
 -chat entre usuários:
 tabelas: usuário e chat - no chat terá o id de ambos os usuários, um insert ocorre no chat quando um usuário começa a 

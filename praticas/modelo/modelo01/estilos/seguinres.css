@@ -30,3 +30,16 @@
     text-decoration: none;
     padding: 10px;
 }
+button{
+    margin-left: 350px;
+}
+@media screen and (max-width: 800px){
+    button{
+        margin-left: 200px;
+    }
+}
+@media screen and (max-width: 600px){
+    button{
+        margin-left: 20px;
+    }
+}
