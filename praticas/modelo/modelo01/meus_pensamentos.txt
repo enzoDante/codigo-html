@@ -49,12 +49,12 @@ n aguento mais pensar em ter mt tabela, pq eu poderia criar uma tabela onde tem 
 =================================================================================================================
 
 ================html páginas q falta=======================================
--chat em grupo (onde diversos usuários mandam mensagem e todos podem ver no msm lugar - parece mais difícil de fazer)
--página de busca (onde eu posso procurar outros usuários e seguí-los)
+-chat em grupo (onde diversos usuários mandam mensagem e todos podem ver no msm lugar -parece mais difícil de fazer... ou n)
 -página geral (onde aparece posts de pessoas q eu nn sigo ou seja, perfis q são recomendados pelo sistema)
 -página de curtida (onde eu vejo quem curtiu um post meu-talvez nn vou fazer pq parece desnecessário)
 
 ================html páginas q tava acima e fiz=======================================
+-página de busca (onde eu posso procurar outros usuários e seguí-los)
 -página principal (onde aparece os posts daqueles q eu sigo)
 -chat entre usuários (entre aqueles q seguem-n sei como fazer por enquanto a parte php... talvez)
 -página de seguidores (onde aparece todos q tal usuário ta seguindo)
