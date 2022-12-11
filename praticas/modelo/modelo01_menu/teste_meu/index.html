@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <h2>Logo</h2>
+        </div>
+        <div id="barra" onclick="mostrar()">
+            |||
+        </div>
+    </header>
+    <nav>
+        <div id="vazio">
+        </div>
+        <div id="menu" class="itens">
+            <a href="">teste</a>
+            <a href="">teste</a>
+            <a href="">teste</a>
+            <a href="">teste</a>
+        </div>
+        <div id="usuario" class="itens">
+            <button>logar</button>
+        </div>
+    </nav>
+    <script>
+        function mostrar(){
+            let menu = document.getElementById("menu")
+            let usu = document.getElementById('usuario')
+
+            if(menu.classList.contains("aberto")){
+                menu.classList.remove("aberto")
+                usu.classList.remove('aberto')
+            }else{
+                menu.classList.add("aberto")
+                usu.classList.add("aberto")
+            }
+        }
+    </script>
+</body>
+</html>
